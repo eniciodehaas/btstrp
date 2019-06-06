@@ -6,7 +6,7 @@
   <title>Lord of the Rings</title>
   <meta name="author" content="Theo den Blanken">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/styleLOTR.css">
 </head>
 
 <body lang="nl">
@@ -44,7 +44,7 @@
   </nav>
 
   <!-- jumbotron -->
-  <header class="jumbotron">
+  <header class="jumbotron text-warning">
     <div class="container-fluid">
       <h1 class="display-4">Lord of the Rings</h1>
       <p class="lead">The Fellowship of the Ring, The Two Towers, The Return of the King
@@ -122,20 +122,24 @@
   <!-- de verhalen -->
   <div id="verhaal" class="container-fluid">
     <div class="row p-4">
-      <section id="fellow" class="col-md-6 col-lg-4 p-4">
-        <h3>The Fellowship of the Ring</h3>
-        <img src="img/fellowshipOfTheRings.jpg" alt="The Fellowship of the Ring" class="img-fluid">
-        <h4>2001</h4>
-        <article>
-          <p>Sauron, de machtige heerser van het kwaad heeft zijn ring verloren. Maar de ring, die de macht van het kwaad is, moet worden vernietigd. Via Gollem, komt deze in het bezit van Bilbo, een Hobbit.
-            <br>
-            De tovenaar Gandalf ontdekt dat de Ring er nog is een gaat het hoofd van de tovenaarsorde raadplegen. Die blijkt de kant van Sauron gekozen te hebben. Sauron gaat op jacht naar de ring. De Nazgûl trekken op naar de Gouw....
-          </p>
-        </article>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fellowShip">
-          Lees meer...
-        </button>
+      <div id="fellow" class="col-md-6 col-lg-4 p-4">
+        <section class="card">
+          <h3 class="card-header">The Fellowship of the Ring</h3>
+          <img src="img/fellowshipOfTheRings.jpg" alt="The Fellowship of the Ring" class="img-fluid card-img-top">
+          <div class="card-body">
+            <h4>2001</h4>
+            <article>
+              <p>Sauron, de machtige heerser van het kwaad heeft zijn ring verloren. Maar de ring, die de macht van het kwaad is, moet worden vernietigd. Via Gollem, komt deze in het bezit van Bilbo, een Hobbit.
+                <br>
+                De tovenaar Gandalf ontdekt dat de Ring er nog is een gaat het hoofd van de tovenaarsorde raadplegen. Die blijkt de kant van Sauron gekozen te hebben. Sauron gaat op jacht naar de ring. De Nazgûl trekken op naar de Gouw....
+              </p>
+            </article>
+          </div>
+            <!-- Button trigger modal -->
+            <div class="card-footer text-center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fellowShip">
+              Lees meer...
+            </button></div>
+        </section>
 
         <!-- inhoud voor modaal -->
         <div class="modal fade" id="fellowShip" tabindex="-1" role="dialog" aria-labelledby="titleFellowship" aria-hidden="true">
@@ -236,12 +240,12 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section id="towers" class="col-md-6 col-lg-4 p-4">
-        <h3>The Two Towers</h3>
-        <img src="img/lord-of-the-rings-two-towers.jpg" alt="The Two Towers" class="img-fluid">
-        <h4>2002</h4>
+      <div id="towers" class="col-md-6 col-lg-4 p-4">
+        <section class="card"><h3 class="card-header">The Two Towers</h3>
+        <img src="img/lord-of-the-rings-two-towers.jpg" alt="The Two Towers" class="img-fluid card-img-top">
+        <div class="card-body"><h4>2002</h4>
         <article>
           <p>Na het gezelschap te hebben verlaten, reizen Frodo en Sam samen verder naar Mordor. Ze worden achtervolgd door Gollem, die zijn ”lieveling” terug wil. Hij valt de twee aan, maar Frodo slaagt erin Gollem te overmeesteren. Sam wantrouwt
             Gollem, maar
@@ -249,11 +253,11 @@
           </p>
           <p>Ondertussen worden de Hobbits Merijn en Pepijn door een groep Uruk-hai naar Isengard gebracht, achtervolgd door Aragorn, Legolas en Gimli. De tocht leidt hen door het koninkrijk van Rohan.
           </p>
-        </article>
+        </article></div>
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#twoTowers">
+        <div class="card-footer text-center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#twoTowers">
           Lees meer...
-        </button>
+        </button></div></section>
 
         <!-- inhoud voor modaal -->
         <div class="modal fade" id="twoTowers" tabindex="-1" role="dialog" aria-labelledby="titleTwoTowers" aria-hidden="true">
@@ -332,14 +336,14 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <!-- nieuwe kolom / sectie -->
 
-      <section id="kingReturn" class="col-md-6 col-lg-4">
-        <h3>The Return of the King</h3>
-        <img src="img/returnOfTheKing.jpg" alt="The Return of the King" class="img-fluid">
-        <h4>2003</h4>
+      <div id="kingReturn" class="col-md-6 col-lg-4">
+        <section class="card"><h3 class="card-header">The Return of the King</h3>
+        <img src="img/returnOfTheKing.jpg" alt="The Return of the King" class="img-fluid card-img-top">
+        <div class="card-body"><h4>2003</h4>
         <article>
           <p>Gollem doet nog altijd dienst als gids voor Frodo en Sam, die hij naar Minas Ithil brengt. Aragorn, Legolas, Gimli, Gandalf, Théoden en Éomer arriveren ondertussen bij het door de Enten veroverde Isengard, waar ze Merijn en Pepijn
             terugvinden.
@@ -348,13 +352,13 @@
             hij de Ene
             Ring heeft. Gandalf besluit Pepijn in veiligheid te brengen en neemt hem mee naar Minas Tirith om de bevolking te waarschuwen.
           </p>
-        </article>
+        </article></div>
         <!-- inhoud voor modaal -->
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#king">
+        <div class="card-footer text-center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#king">
           Lees meer...
-        </button>
+        </button></div></section>
 
         <!-- Modal -->
         <div class="modal fade" id="king" tabindex="-1" role="dialog" aria-labelledby="titleKing" aria-hidden="true">
@@ -432,7 +436,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <!-- einde kolom -->
     </div>
   </div>
@@ -467,6 +471,8 @@
     $(function() {
       $('#inleiding p').matchHeight();
       $('#verhaal article').matchHeight();
+      $('.card-header').matchHeight();
+      $('.card-footer').matchHeight();
     });
   </script>
 </body>
